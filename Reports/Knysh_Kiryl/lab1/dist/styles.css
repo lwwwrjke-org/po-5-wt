@@ -1,0 +1,102 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.background {
+  height: 100vh;
+  background-color: #ede7f6;
+}
+.background_top {
+  background-color: #673ab7;
+  height: 250px;
+}
+
+.container {
+  padding: 24px;
+  padding-top: 22px;
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 160px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+}
+.container .top-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 8px;
+  width: 100%;
+  background-color: #9d75e0;
+}
+.container .title span {
+  font-size: 32px;
+}
+.container .subtitle {
+  margin-top: 12px;
+}
+.container .subtitle span {
+  font-size: 14px;
+}
+.container .warning {
+  margin-top: 12px;
+}
+.container .warning span {
+  color: red;
+  font-size: 14px;
+}
+.container form .input {
+  margin-top: 45px;
+}
+.container form .input .label {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+.container form .input_text input {
+  padding: 0;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid silver;
+}
+.container form .input_radio {
+  display: flex;
+  flex-direction: column;
+}
+.container form .input_radio .radio {
+  display: flex;
+  align-items: center;
+}
+.container form .input_radio .radio input {
+  margin: 5px 0;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.container form .input_select select {
+  border: none;
+}
+.container form .input_checkbox {
+  display: flex;
+  flex-direction: column;
+}
+.container form .input_checkbox .checkbox {
+  display: flex;
+  align-items: center;
+}
+.container form .input_checkbox .checkbox input {
+  margin: 5px 0;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.container form .input_date input {
+  border: none;
+  border-bottom: 1px solid silver;
+  outline: none;
+}

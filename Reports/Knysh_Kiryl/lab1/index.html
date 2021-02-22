@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 1</title>
+    <link rel="stylesheet" href="dist/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background">
+        <div class="background_top"></div>
+        <div class="background_main"></div>
+    </div>
+    <div class="container">
+        <div class="top-line"></div>
+        <div class="title">
+            <span>Password request form</span>
+        </div>
+        <div class="subtitle">
+            <span>Когда вы загрузите файлы и отправите форму, мы сохраним ваше имя и фото профиля.</span>
+        </div>
+        <div class="warning">
+            <span>*Required</span>
+        </div>
+        <form action="">
+            <div class="input_text input" >
+                <div class="label">Please fill your name</div>
+                <input type="text" class="text">
+            </div>
+            <div class="input_radio input">
+                <div class="label">What color you like?</div>
+                <div class="radio">
+                    <input type="radio" class="radio" name="color">
+                    <span>Red</span>
+                </div>
+                <div class="radio">
+                    <input type="radio" class="radio" name="color">
+                    <span>Green</span>
+                </div>
+                <div class="radio">
+                    <input type="radio" class="radio" name="color">
+                    <span>Blue</span>
+                </div>
+                <div class="radio">
+                    <input type="radio" class="radio" name="color">
+                    <span>Orange</span>
+                </div>
+            </div>
+            <div class="input_select input">
+                <div class="label">What town you like more?</div>
+                <select name="location">
+                      <option value="">Choose</option>
+                      <option value="">One</option>
+                      <option value="">Two</option>
+                      <option value="">Three</option>
+                      <option value="">Four</option>
+                </select>
+            </div>
+            <div class="input_text input">
+                <div class="label">Please describe yourself</div>
+                <input type="text" class="text">
+            </div>
+            
+            <div class="input_checkbox input">
+                <div class="label">What years of education u realy like??</div>
+                <div class="checkbox">
+                    <input type="checkbox" name="years">
+                    <span>One</span>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="years">
+                    <span>Two</span>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="years">
+                    <span>Three</span>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="years">
+                    <span>Four</span>
+                </div>
+            </div>
+            <div class="input_date input">
+                <div class="label">Set last Monday Monday?</div>
+                <input type="date" name="time">
+             </div>
+             <div class="input_file input">
+                <div class="label">Please send any image</div>
+                <input type="file">
+             </div>
+             <div class="input_submit input">
+                <button type="submit">Submit</button>
+             </div>
+        </form>
+    </div>
+</body>
+</html>
