@@ -2,9 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="form-styles.css" rel="stylesheet">
     <title>Title</title>
 </head>
 <body>
-
+<div class="bg bg-top"></div>
+<div class="bg bg-bottom"></div>
+<div class="container transparent">
+    <div class="container form-container">
+        <div class="form-footer"></div>
+        <form action="form.html" class="form">
+            <h1 class="form-item">Password request form</h1>
+            <h4 class="form-item">Vivamus aliquet a nulla vel vulputate. Nulla facilisi. Vestibulum
+                vestibulum molestie
+                metus, et accumsan est finibus ac. Fusce accumsan fermentum porta. In maximus, magna dignissim porttitor
+                pellentesque, urna lacus fringilla lacus, cursus porttitor eros felis quis lacus. Aliquam erat volutpat.
+                Duis a dapibus augue, nec dapibus mauris. Donec feugiat pharetra ante, eget rutrum neque interdum ut.
+                Aliquam quis accumsan odio, et blandit massa. Donec consequat ac neque eu tincidunt.</h4>
+            <div class="form-item">
+                <label><h2>Please fill your name</h2><input placeholder="Your input" type="text"></label>
+            </div>
+            <div class="form-item">
+                <h2>What color you like</h2>
+                <label><input name="color" type="radio" value="red">Red</label>
+                <label><input name="color" type="radio" value="green">Green</label>
+                <label><input name="color" type="radio" value="blue">Blue</label>
+                <label><input name="color" type="radio" value="black">Black</label>
+                <label><input name="color" type="radio" value="white">White</label>
+                <label>
+                    <input name="color" type="radio">Other:
+                    <input name="color" type="text">
+                </label>
+            </div>
+            <div class="form-item">
+                <h2>What town do you like more?</h2>
+                <label>
+                    <select name="town">
+                        <option value="1">one</option>
+                        <option value="2">two</option>
+                        <option value="3">three</option>
+                        <option value="4">four</option>
+                    </select>
+                </label>
+            </div>
+            <div class="form-item">
+                <h2>Please describe your favorite programing language.</h2>
+                <label><input name="programing-language" placeholder="Your input" type="text"></label>
+            </div>
+            <div class="form-item">
+                <h2>What years of education did you really like?</h2>
+                <label><input name="first-year" type="checkbox" value="1">First</label>
+                <label><input name="second-year" type="checkbox" value="2">Second</label>
+                <label><input name="third-year" type="checkbox" value="3">Third</label>
+                <label><input name="fourth-year" type="checkbox" value="4">Fourth</label>
+            </div>
+            <div class="form-item">
+                <h2>Please send any image</h2>
+                <label><input name="file" type="file"></label>
+            </div>
+            <div class="form-item">
+                <h2>Set last Monday Monday</h2>
+                <h5 class="text-quiet">Date</h5>
+                <label><input name="date" type="date"></label>
+            </div>
+            <div class="form-item">
+                <label><input type="submit"></label>
+            </div>
+            <h6 class="form-item text-quiet">Vivamus aliquet a nulla vel vulputate.</h6>
+        </form>
+    </div>
+    <h3 class="transparent footer text-quiet">Vivamus aliquet a nulla vel vulputate.</h3>
+    <h1 class="transparent footer text-quiet">Google forms</h1>
+</div>
 </body>
 </html>
