@@ -1,35 +1,29 @@
-function NumException(message)
-{
-    this.message=message;
-    this.name = "My Exception";
+function NumException(message) {
+    this.message = message;
+    this.name = 'My Exception';
 }
 
-function fib(n) 
-{
-    let a=1;
-    let b=1;
-    for(let i=3; i<=n; i++)
-    {
-        let c=a+b;
-        a=b;
-        b=c;
+function fib(n) {
+    let firsFibNum = 1;
+    let secFibNum = 1;
+    for (let i = 3; i <= n; i++) {
+        let follFibNum = firsFibNum + secFibNum;
+        firsFibNum = secFibNum;
+        secFibNum = follFibNum;
     }
-    return b;
+    return secFibNum;
 }
 
-function task3()
-{
-    try
-    {
-        let i_num = prompt("Введите параметр i");
-        if (!parseInt(i_num))
-            throw new NumException("Параметр должен быть числом")
-        let FibNum=fib(i_num);
+function task3() {
+    try {
+        let iNum = prompt('Введите параметр i');
+        if (!parseInt(iNum, 10)) {
+            throw new NumException('Параметр должен быть числом');
+        }
+        let FibNum = fib(iNum);
         alert(FibNum);
-    }
-    catch (e)
-    {
-        alert(e.message);
+    } catch (err) {
+        alert(err.message);
         task3();
     }
 }
