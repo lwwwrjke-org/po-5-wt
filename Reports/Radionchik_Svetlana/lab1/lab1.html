@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Form</title>
     <link rel="stylesheet" href="style.css">
+    
   </head>
   <body>
     <div class="container1">
@@ -19,8 +20,7 @@
             <h3 class="h3_style">*Required</h3>
             <div class="form_div_grupp">
                 <label class="form_label_style">Please fill your name<label class="form_label_starstyle">*</label></label>
-                <br><input class="form_input" placeholder=" "><br>
-                <label class="form_label">Your answer</label>
+                <br><br><input class="form_input" placeholder="Your answer"><br>
             </div>
             <div class="form_div_grupp">
                 <label class="form_label_style">What color you like<label class="form_label_starstyle">*</label></label><br><br>
@@ -43,9 +43,8 @@
                 </select>
             </div>
             <div class="form_div_grupp">
-                <label class="form_label_style">Please describe your favorite programming language<label class="form_label_starstyle">*</label></label>
-                <br><input class="form_input" placeholder=" "><br>
-                <label class="form_label">Your answer</label>
+                <label class="form_label_style">Please describe (at least 50 symbols) your favorite programming language<label class="form_label_starstyle">*</label></label>
+                <br><br><br><input class="form_input" placeholder="Your answer" minlength="50"><br>
             </div>
             <div class="form_div_grupp">
                 <label class="form_label_style">What years of education did you really like?<label class="form_label_starstyle">*</label></label><br><br>
@@ -62,8 +61,7 @@
             <div class="form_div_grupp">
                 <label class="form_label_style">Set last Monday<label class="form_label_starstyle">*</label></label><br>
                 <label class="form_label_date">Date</label><br><br>
-                <input class="form_input" placeholder=" "><br>
-                <label class="form_label_indate">mm/dd/yyyy</label>
+                <input class="form_calendar" type="date">
             </div>
             <button class="form_button">SUBMIT</button>
             <div class="form_div_grupp">

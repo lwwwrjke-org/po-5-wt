@@ -72,14 +72,6 @@ input[type="file"]
     display: inline;
     cursor: pointer;
 }
-.form_label
-{
-    position: absolute;
-    top: 25px;
-    color: #8d8d8d;
-    transition: 0.3s;
-   
-}
 .form_label_date
 {
     position: absolute;
@@ -87,14 +79,6 @@ input[type="file"]
     font-size: small;
     color: #8d8d8d;
     letter-spacing: 0.5px;
-}
-.form_label_indate
-{
-    position: absolute;
-    top: 60px;
-    font-size:medium;
-    color:black;
-    transition: 0.3s;
 }
 .form_input:focus
 {
@@ -128,6 +112,13 @@ input[type="file"]
     font-weight:550;
     font-size:large;
     color: red;
+}
+.form_calendar
+{
+    border: none;
+    border-bottom: 1px solid #e0e0e0; /*Нижняя рамка*/
+    background-color: transparent; /* Фон будет прозрачным.*/ 
+    outline: none;
 }
 footer
 {
