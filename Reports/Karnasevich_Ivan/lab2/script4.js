@@ -1,6 +1,4 @@
-import {NumberFormatException, requestNum, validateNum} from "./basic";
-
-export function main4() {
+function main4() {
     try {
         let day = validateNum(
             requestNum("Enter the number of the day",
@@ -11,13 +9,17 @@ export function main4() {
             requestNum("Enter the number of the month",
                 new NumberFormatException("String is not a number")
             ), 1, 13)
+        let monthIdx = month - 1;
 
         let daysInWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-        let date = new Date(2016, month - 1, day)
-        alert(daysInWeek[date.getDay() - 1])
+        let date = new Date(2016, monthIdx, day)
 
-
+        if (date.getFullYear() === 2016 && date.getMonth() === monthIdx && date.getDate() === day)
+            alert(daysInWeek[date.getDay() - 1])
+        else alert('No such day')
     } catch (e) {
-        alert(e)
+        if (e instanceof NumberFormatException)
+            alert(e.message)
+        else throw e;
     }
 }

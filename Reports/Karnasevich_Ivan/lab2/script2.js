@@ -1,6 +1,4 @@
-import {NumberFormatException, requestNum, validateNum} from "./basic";
-
-export function calculateEntranceNumber() {
+function main2() {
     let errorMessage = 'String is not a number';
     try {
         let floorsCount = validateNum(requestNum(
@@ -20,7 +18,7 @@ export function calculateEntranceNumber() {
 
         let flatNumber = validateNum(requestNum(
             'Enter flat number',
-            new NumberFormatException(errorMessage)
+            new NumberFormatException("Such flat cannot exist in the house")
         ), 1, floorsCount * flatPerEntranceFloor * entranceCount)
 
 
@@ -32,9 +30,10 @@ export function calculateEntranceNumber() {
                 return;
             }
         }
-
     } catch (e) {
-        alert(e)
+        if (e instanceof NumberFormatException)
+            alert(e.message)
+        else throw e;
     }
 }
 

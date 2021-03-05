@@ -1,4 +1,4 @@
-export function calculator() {
+function main1() {
     let a = requestNum('Enter first number', 'First enter is not a number');
     if (!a) {
         return

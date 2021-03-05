@@ -1,6 +1,4 @@
-import {NumberFormatException, requestNum, validateNum} from "./basic";
-
-export function main3() {
+function main3() {
     try {
         let num = validateNum(
             requestNum("Enter number of fibonacci number",
@@ -8,7 +6,9 @@ export function main3() {
             ), 0, 1000000)
         alert(fibonacci(num))
     } catch (e) {
-        alert(e)
+        if (e instanceof NumberFormatException)
+            alert(e.message)
+        else throw e;
     }
 }
 
