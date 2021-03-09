@@ -53,13 +53,13 @@ function checkTask2() {
     } catch (err) {
         if (err instanceof NoneFlatException) {
             alert(err.message);
-            check_task2();
+            checkTask2();
         } else if (err instanceof CheckNumException) {
             alert(err.message);
-            check_task2();
+            checkTask2();
         } else if (err instanceof NumOutOfRangeException) {
             alert(err.message);
-            check_task2();
+            checkTask2();
         } else {
             return UNKNOWN_ERROR;
         }
