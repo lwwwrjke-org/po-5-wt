@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" method="post">
+            <h1 class="form-header">Password request form</h1>
+
+            <p class="font-small">The name and photo associated with your Google account will be
+                recorded when you upload files and submit this form. Not
+                <b class="font-small">spas.work@gmail.com</b>? <a href="" class="font-small">Switch account</a>
+            </p>
+
+            <p class="required font-small" id="required-msg">*Required</p>
+
+            <h2 class="instruction">Please fill your name <span class="required">*</span></h2>
+            <input type="text" name="name" class="border-underlined" 
+                placeholder="Your answer" required>
+
+            <h2 class="instruction">What color you like <span class="required">*</span></h2>
+            <label><input type="radio" name="color" value="red" required> Red</label>
+            <label><input type="radio" name="color" value="green"> Green</label>
+            <label><input type="radio" name="color" value="blue"> Blue</label>
+            <label><input type="radio" name="color" value="black"> Black</label>
+            <label><input type="radio" name="color" value="white"> White</label>
+            <label>
+                <input type="radio" name="color" value="other"> Other:
+                <input type="text" name="colorText" id="color-text" class="border-underlined">
+            </label>
+
+            <h2 class="instruction">What town you like more <span class="required">*</span></h2>
+            <select id="towns" required>
+                <option value="" disabled selected hidden>Choose</option>
+                <option value="brest">Brest</option>
+                <option value="minsk">Minsk</option>
+                <option value="new-york">New-York</option>
+            </select>
+            
+            <h2 class="instruction">Please describe (at least 50 symbols on symbols)
+                your favorite programming language <span class="required">*</span></h2>
+            <div class="flex-container">
+                <input type="text" name="favLanguage" class="border-underlined" 
+                    placeholder="Your answer" required minlength="50">
+            </div>
+
+            <h2 class="instruction">What years of education did you really like? 
+                <span class="required">*</span></h2>
+            <label><input type="checkbox" name="firstYear"> First</label>
+            <label><input type="checkbox" name="secondYear"> Second</label>
+            <label><input type="checkbox" name="thirdYear"> Third</label>
+            <label><input type="checkbox" name="fourthYear"> Fourth</label>
+
+            <div>
+                <h2 class="instruction">Please send any image <span class="required">*</span></h2>
+                <label id="image-picker-wrapper">
+                    <input type="file" name="image" id="image-picker" accept=".jpeg, .jpg, .png" required>
+                    ADD FILE
+                </label>
+            </div>
+
+            <h2 class="instruction">Set last Monday <span class="required">*</span></h2>
+            <p class="font-small" id="date-prompt">Date</p>
+            <input type="date" name="date" class="border-underlined" required>
+
+            <div>
+                <input type="submit" value="SUBMIT" id="submit-button">
+            </div>
+
+            <p class="font-small" id="warning">Never submit passwords through Google Forms</p>
+        </form>
+    </div>
+</body>
+</html>
