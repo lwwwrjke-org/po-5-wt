@@ -4,8 +4,12 @@ function NumException(message) {
 }
 
 function fib(n) {
-    let firsFibNum = 1;
+    let firsFibNum = 0;
     let secFibNum = 1;
+    if(n==1)
+    {
+        return firsFibNum;
+    }
     for (let i = 3; i <= n; i++) {
         let follFibNum = firsFibNum + secFibNum;
         firsFibNum = secFibNum;
