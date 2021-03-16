@@ -1,8 +1,8 @@
 function getDayOfWeek() {
-    let month = Number(prompt());
+    let month = Number(prompt("Введите номер месяца"));
     validate(month, 1, 12);
 
-    let day = Number(prompt());
+    let day = Number(prompt("Введите число"));
     validate(day, 1, 31);
 
     let days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", 
@@ -15,14 +15,5 @@ function getDayOfWeek() {
     }
     else {
         alert("Такого дня не было");
-    }
-}
-
-function validate(number, min, max) {
-    if (Number.isNaN(number)) {
-        throw "Введено не число";
-    }
-    else if (number < min || number > max) {
-        throw "Введенное число вне допустимого диапазона";
     }
 }
