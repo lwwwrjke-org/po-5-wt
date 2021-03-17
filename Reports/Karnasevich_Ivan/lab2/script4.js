@@ -11,7 +11,7 @@ function main4() {
             ), 1, 13)
         let monthIdx = month - 1;
 
-        let daysInWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        let daysInWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
         let date = new Date(2016, monthIdx, day)
 
         if (date.getFullYear() === 2016 && date.getMonth() === monthIdx && date.getDate() === day)
