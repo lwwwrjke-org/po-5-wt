@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  font-family: Arial, Helvetica;
+  font-size: 13px;
+}
+
+body {
+  background: linear-gradient(to bottom, rgb(103, 58, 183) 25%, rgb(238, 230, 255) 0) fixed;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+label {
+  display: block;
+}
+
+.container {
+  width: 750px;
+  max-width: 90vw;
+  margin-top: 15vh;
+  margin-bottom: 35px;
+  background: white;
+}
+
+form > * {
+  padding: 0 20px;
+}
+
+form > input, select {
+  padding: 0;
+  margin-left: 20px;
+}
+
+form > label, input, select {
+  margin-top: 7px;
+}
+
+.form-header {
+  font-weight: normal;
+  margin: 15px 0;
+}
+
+.font-small {
+  font-size: 12.5px;
+}
+
+.required {
+  color: red;
+}
+
+#required-msg {
+  margin-top: 15px;
+}
+
+#date-prompt {
+  margin-top: 7px;
+  opacity: 0.5;
+}
+
+#color-text {
+  padding: 0;
+  margin-top: 0;
+  margin-left: 5px;
+}
+
+#submit-button {
+  margin-top: 35px;
+  font-size: 13px;
+  border-radius: 4px;
+  border-color: #dde9fd;
+  padding: 7px 11px;
+  color: white;
+  background-color: #4285F4;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.instruction {
+  font-weight: normal;
+  margin-top: 20px;
+}
+
+.border-underlined {
+  border: none;
+  border-bottom: 1px solid gainsboro;
+  outline: none;
+}
+
+#image-picker-wrapper
+{
+  margin-top: 7px;
+  color: blue;
+}
+
+#image-picker {
+  display: none;
+}
+
+#warning {
+  margin: 17px 0;
+  color: #b5b4be;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 20px;
+}
