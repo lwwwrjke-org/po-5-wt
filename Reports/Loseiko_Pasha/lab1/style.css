@@ -1,0 +1,90 @@
+h1{
+font-weight:50;
+}
+h2 {
+font-size: 13px;
+font-weight: 10;
+} 
+h3{
+font-size: 16px;
+padding: 20px 0px 5px 0px;
+}
+h4{
+font-size: 14px;
+color: #00BFFF;
+}
+h5{
+	color: grey;
+font-size: 12px;
+}
+h6{
+	font-size: 20px;
+	font-family: 'Lucida console';
+	margin: 15px 0 50px 20px;
+}
+form{
+background:white; 
+padding:60px;
+width:550px;
+}
+body{
+font-family: 'Arial';
+background: linear-gradient(to bottom, BlueViolet 15%, #EDE7F6 0%); 
+}
+.fon{
+width: 40%;
+margin-left: 35%;
+margin-top: 150px;
+margin-bottom: 100px; 
+}
+.input{
+width: 50%;
+padding: 0 0 3px 0;
+border: none;
+border-bottom: 1px solid #e0e0e0;
+outline: none;
+}
+.add{
+color: blue;
+font-size: 13px;
+font-weight: 700;
+cursor: pointer;
+}
+.title{
+font-size: 30px;
+}
+.button{
+font-size: 13px;
+} 
+.submit {
+	background-color:#00BFFF;
+	border: none;
+	text-align: center;
+	padding: 10px 25px;
+	
+}
+.menu{
+border: none;
+outline: none;
+transition: 0.3s;
+background-color: transparent;
+color: grey;
+} 
+.text{
+color: grey;
+font-size: 12px;
+padding: 5px 0 0 0;
+}
+.text2 {
+margin: -65px 0 0 0px;
+display: flex;
+justify-content: center;
+color: gray;
+}
+.lasttext {
+color: #c2c2c2;
+display: flex;
+justify-content: center;
+}
+
+
