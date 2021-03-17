@@ -1,0 +1,106 @@
+.bold{
+    font-weight: bold;
+}
+
+.link{
+    color: blue;
+    text-decoration: underline;
+}
+
+.red{
+    color: red;
+}
+
+.white{
+    color:white;
+}
+
+.gray{
+    color:rgb(190, 190, 190);
+}
+
+.google{
+     color:rgb(150, 150, 150);
+}
+
+body{
+    background: linear-gradient(180deg, rgb(103,59,184) 15%, rgb(238,232,246) 0);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#background{
+    width: 700px;
+    height: 1430px;
+    border-top: 7px solid rgb(193,164,243);
+    background: white;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5), 0 10px 10px rgba(0,0,0,0.22);
+    margin-top: 200px;
+    margin-bottom: 170px;
+}
+
+#background h1{
+    margin-top: 30px;  
+    margin-left: 30px;
+}
+
+#background p{
+    font-size: 13.5px;
+}
+
+#background h2{
+    font-size: 20px;
+}
+
+#background p, h2{
+    margin-left: 30px;
+    margin-right: 50px;
+}
+
+#terms{
+    margin-top: 50px;
+}
+
+#background input{
+    border: none;
+    border-bottom: 2px solid #e0e0e0;
+    font-family: Arial;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#background select{
+    color:rgb(190, 190, 190);
+    font-size: 14px;  
+    border-radius: 10px;
+}
+
+#background button{
+    background-color: rgb(151,148,227);
+    border: 12px solid rgb(151,148,227)
+}
+
+#background button:hover{
+    background-color: rgb(30, 25, 155);
+    border: 12px solid rgb(30, 25, 155)
+}
+
+input[type="file"]{
+    display: none;
+}
+
+.fifth_block label{
+    display:block;
+    border: whitesmoke;
+}
+
+.custom-file-upload{
+    color: rgb(12, 153, 247);
+    border: 1px solid #ccc;
+    display: inline-block;
+    margin-left: 30px;
+    cursor: pointer;
+}

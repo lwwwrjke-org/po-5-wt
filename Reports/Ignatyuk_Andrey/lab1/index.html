@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <link rel="stylesheet" href="style.css">
+      <style>
+         * {
+         margin: 0;
+         padding: 0;
+         }
+      </style>
+   </head>
+   <body>
+      <form action="" method="POST">
+         <div id="background">
+            <h1>Password request form</h1>
+            <br><br>
+            <p>The name and photo associated with your Google account will be recorded when you upload files and sumbit this form. Not
+                <span class="bold">spas.work@gmail.com</span>? <span class="link"> Swich account</span></p>
+            <p><br><span class="red">*Required</span></p>
+            <br><br>
+            <h2>Please fill your name <span class="red">*</span><br><br>
+               <input name="fname" type="text" size="40" placeholder="Your anwser" required/>
+            </h2>
+            <br><br><br>
+            <h2>What color you like</h2>
+            <Br>
+            <p>
+               <input type="radio" name="color" value="Red"> Red<Br><Br>
+               <input type="radio" name="color" value="Green"> Green<Br><Br>
+               <input type="radio" name="color" value="Blue"> Black<Br><Br>
+               <input type="radio" name="color" value="White"> White<Br><Br>
+               <input type="radio" name="color" value="Other"> Other: <input size="32" type="text">
+            </p>
+            <Br><Br><Br>
+            <h2>What town you like more? <span class="red">*</span></h2>
+            <Br>
+            <p>
+               <select required>
+                  <option selected disabled>Сhoose</option>
+                  <option value="Canberra">Canberra</option>
+                  <option value="Ottawa">Ottawa</option>
+                  <option value="London">London</option>
+                  <option value="Paris">Paris</option>
+                  <option value="Berlin">Berlin</option>
+               </select>
+            </p>
+            <Br><Br><Br>
+            <h2>Please describe (at least 50 sybmols on symbols) your favorite programming language 
+                <span class="red">*</span><br><br>
+               <input name="prlang" type="text" size="80" placeholder="Your anwser" minlength="50" required>
+            </h2>
+            <Br><Br><Br>
+            <h2>What year of education did you realy like?</h2>
+            <Br>
+            <p> 
+               <input type="checkbox" name="year" value="First"> First<Br><Br>
+               <input type="checkbox" name="year" value="Second"> Second<Br><Br>
+               <input type="checkbox" name="year" value="Third"> Third<Br><Br>
+               <input type="checkbox" name="year" value="Fourth"> Fourth
+            </p>
+            <Br><Br><Br>
+            <h2>Please send any image<Br><Br></h2>
+            <div class="fifth_block">
+               <label for="file-upload" class="custom-file-upload">
+               <span class="bold">ADD FILE</span>
+               </label>
+               <input id="file-upload" type="file" name="file" accept="image/*"/>
+            </div>
+            <Br><Br><Br>
+            <h2>Set last Monday Monday <span class="red">*</span></h2>
+            <Br>
+            <p><span class="gray">Date</span></p>
+            <Br>
+            <p><input type="date" name="date" required></p>
+            <Br><Br><Br>
+                <p><button type="submit"><span class="white">SUMBIT</span></button></p>
+            <Br>
+            <p><span class="google">Never sumbit passwords throught Google Forms.</span></p>
+            <Br><Br>
+            <p id="terms" align="center"><span class="google">This content is neither created nor endorsed by Google.
+                Report Abuse -Terms of Service - Additional Terms<br/> <br/>
+               <span class="bold"><big><big>Google</span>Forms</span></big></big>
+            </p>
+         </div>
+      </form>
+   </body>
+</html>
