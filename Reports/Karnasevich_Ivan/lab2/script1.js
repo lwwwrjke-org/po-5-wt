@@ -16,7 +16,7 @@ function main1() {
 }
 
 function requestNum(inputMessage, errorMessage) {
-    let num = parseInt(prompt(inputMessage))
+    let num = parseFloat(prompt(inputMessage))
     if (num) {
         return num;
     } else {
