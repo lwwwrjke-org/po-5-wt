@@ -7,7 +7,7 @@ function task4(){
 
     let weekdays = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
 
-    let date = new Date(2001, month - 1, day);
+    let date = new Date(2016, month - 1, day);
 
     switch (date.getDay()) {
         case 0:
@@ -39,8 +39,10 @@ function task4(){
 function check(num, min, max){
     if(Number.isNaN(num)){
         alert("Введено не число!");
+        return;
     }
     else if(num < min || num > max){
-        alert("Число не входит в диапазон!")
+        alert("Число не входит в диапазон!");
+        return;
     }
 }

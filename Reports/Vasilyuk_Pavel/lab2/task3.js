@@ -3,9 +3,11 @@ function task3(){
 
     if (Number.isNaN(i)) {
         alert ("Введено не число");
+        return;
     }
     else if (i <= 0) {
         alert ("Число должно быть больше нуля!");
+        return;
     }
 
     if (i === 1) {
