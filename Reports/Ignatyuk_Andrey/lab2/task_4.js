@@ -1,21 +1,35 @@
-function task_4(){
+function task_4() {
     let month = Number(prompt("Введите месяц:"));
 	
     if(Number.isNaN(month)){
         alert("Введено не число!");
+		return;
     }
     else if(month < 1 || month > 12){
         alert("Число не входит в диапазон!")
+		return;
     }
 
     let day = Number(prompt("Введите день:"));
 	
     if(Number.isNaN(day)){
         alert("Введено не число!");
+		return;
     }
     else if(day < 1 || day > 31){
         alert("Число не входит в диапазон!")
+		return;
     }
+
+	if(month === 2 && day > 29){
+		alert("Неверное число!");
+		return;
+	}
+	
+	if((month === 4 || month === 6 || month === 9 || month === 11) && day > 30){
+		alert("Неверное число!");
+		return;
+	}
 
     let date = new Date(2016, month - 1, day);
 

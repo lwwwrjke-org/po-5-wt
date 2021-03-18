@@ -3,13 +3,15 @@ function task_3(){
 
     if (Number.isNaN(number)) {
         alert ("Введено не число!");
+		return;
     }
     else if (number < 1) {
         alert ("Введено неверное число!");
+		return;
     }
 
     if (number === 1) {
-        alert(0);
+        alert("Число: " + 0);
         return;
     }
 
