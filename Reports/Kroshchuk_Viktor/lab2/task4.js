@@ -15,12 +15,10 @@
 		return;
 	}
 
-    let year = Number(prompt("Введите год."));
-    check(year, 1, 10000);
 
     let weekdays = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
 
-    let date = new Date(year, month - 1, day);
+    let date = new Date(2016, month - 1, day);
 
     switch (date.getDay()) {
         case 0:
