@@ -9,16 +9,16 @@ function task2(){
     check(flatQt, 1, 20);
 
     let flatNum = Number(prompt("Введите номер квартиры."));
-    check(flatNum, 1, floorQt * entranceQt * flatQt);
+    check(flatNum, 1, 20);
 
     let flatsInEntrance = floorQt * flatQt;
 
     for(let i = 0; i < entranceQt + 1; i++){
-        if(i * flatsInEntrance >= flatNum){
+        if(i * flatsInEntrance > flatNum){
             alert("Номер подьезда: " + i);
             return;
         }
-        else if(i === entranceQt + 1){
+        else if(i === 3){
             alert("Такой квартиры не существет! ");
             return;
         }
