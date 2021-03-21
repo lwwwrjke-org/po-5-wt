@@ -15,7 +15,7 @@ function task3()
 		alert("Invalid data");
 		return;
 	}
-	if (index < 1 || !Number.isInteger(index))
+	if (index < 1 || !Number.isInteger(+index))
 	{
 		alert("Invalid data");
 		return;
