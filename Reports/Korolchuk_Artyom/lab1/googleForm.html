@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>googleForm</title>
+	<link rel="stylesheet" type="text/css" href="googleFormStyle.css">
+</head>
+<body>
+		<div class="container">
+			<div class="container__left">
+				<div class="container__left__top"></div>
+				<div class="container__left__bottom"></div>
+			</div>
+			<div class="container__center">
+				<div class="container__center__top"></div>
+				<div class="container__center__light"></div>
+				<div class="container__center__googleForm">
+
+					<h1 class="googleForm__title">Password request form</h1>
+					<label class="googleForm__switch">The name and photo associated with your Google account will be recorded when you upload files and submit this form. Not <strong>spas.work@gmail.com</strong>? <a href="">Switch account</a></label><br>
+					<span style="color: red;">*Required</span>
+
+					<form class="mainForm" method="post" action="googleForm.html">
+						<p>
+							<label class="mainForm__mainText">Please fill your name<span style="color: red;">*</span></label><br><br>
+							<input type="text" name="userName" required placeholder="Your answer" class="mainForm__fillName">
+						</p><br>
+
+						<p>
+							<label class="mainForm__mainText">What color you like<span style="color: red;">*</span></label><br><br>
+							<input type="radio" name="favouriteColor"> Red<br>
+							<input type="radio" name="favouriteColor"> Green<br>
+							<input type="radio" name="favouriteColor"> Blue<br>
+							<input type="radio" name="favouriteColor"> Black<br>
+							<input type="radio" name="favouriteColor"> White<br>
+							<input type="radio" name="favouriteColor"> Other:
+							<input type="text" name="anotherFavouriteColour" required class="mainForm__anotherColor">
+						</p>
+
+						<p>
+							<label class="mainForm__mainText">What town you like more?<span style="color: red;">*</span></label><br><br>
+							<select class="mainForm__select" required>
+								<option label="Minsk"></option>
+								<option label="Moskow"></option>
+								<option label="Paris"></option>
+								<option label="Brest"></option>
+							</select>
+						</p><br>
+
+						<p>
+							<label class="mainForm__mainText">Please describe (at least 50 symbols on symbols) your favourite programming language<span style="color: red;">*</span></label><br><br>
+							<input type="text" name="favouriteLanguage" required placeholder="Your answer" class="mainForm__language" minlength="50">
+						</p><br>
+
+						<p>
+							<label class="mainForm__mainText">What years of education did you really like?<span style="color: red;">*</span></label><br><br>
+							<input type="checkbox" name="educationYears" required> First<br>
+							<input type="checkbox" name="educationYears" required> Second<br>
+							<input type="checkbox" name="educationYears" required> Third<br>
+							<input type="checkbox" name="educationYears" required> Fourth
+						</p><br>
+
+						<p>
+							<label class="mainForm__mainText">Please send any image<span style="color: red;">*</span></label><br><br>
+							<label for="selectFile" class="mainForm__addFile">ADD FILE</label>
+							<input type="file" name="anyImage" id="selectFile" hidden required>
+						</p><br>
+
+						<p>
+							<label class="mainForm__mainText">Set last Monday<span style="color: red;">*</span></label><br><br>
+							<label class="mainForm__dateText">Date</label><br><br>
+							<input type="date" name="date" required class="mainForm__date">
+						</p><br><br>
+
+						<input type="submit" name="submit" value="SUBMIT" class="mainForm__submitButton"><br><br>
+
+					</form>
+
+					<label class="neverSubmitPasswords">Never submit passwords through Google Forms.</label>
+
+				</div>
+				<div class="container__center__bottom">
+					<label class="contentByGoogle">This content is neither created nor endorsed by Google. Report Abuse - Terms of Service - Additional Terms</label><br><br>
+					<label class="googleName">Google Forms</label>
+				</div>
+			</div>
+			<div class="container__right">
+				<div class="container__right__top"></div>
+				<div class="container__right__bottom"></div>
+			</div>
+		</div>
+</body>
+</html>
