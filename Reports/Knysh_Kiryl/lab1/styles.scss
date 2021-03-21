@@ -67,12 +67,13 @@ body {
                 .radio {
                     display: flex;
                     align-items: center;
+                    cursor: pointer;
                     input {
                         margin: 5px 0;
                         width: 20px;
                         height: 20px;
                         margin-right: 10px;
-                        cursor: pointer;
+                        
                     }
                     input:hover {
                         border: 10px solid rgb(157, 117, 224);
@@ -92,6 +93,7 @@ body {
                 .checkbox {
                     display: flex;
                     align-items: center;
+                    cursor: pointer;
                     input {
                         margin: 5px 0;
                         width: 20px;
@@ -110,16 +112,23 @@ body {
             }
             &_file {
                 input {
-                    border: none;
-                    overflow: hidden;
-                    display: none;
+                    color: transparent;
+                    outline: none;
                 }
-                span {
-                    text-transform: uppercase;
+                input::-webkit-file-upload-button {
+                    visibility: hidden;
+                }
+                input::before {
+                    content: 'add file';
+                    display: inline-block;
                     color: rgb(103, 58, 183);
+                    text-transform: uppercase;
+                    outline: none;
+                    white-space: nowrap;
+                    user-select: none;
                     cursor: pointer;
                 }
-                span:hover {
+                input:hover:before {
                     text-decoration: underline;
                 }
             }

@@ -71,13 +71,13 @@ body {
 .container form .input_radio .radio {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .container form .input_radio .radio input {
   margin: 5px 0;
   width: 20px;
   height: 20px;
   margin-right: 10px;
-  cursor: pointer;
 }
 .container form .input_radio .radio input:hover {
   border: 10px solid #9d75e0;
@@ -93,6 +93,7 @@ body {
 .container form .input_checkbox .checkbox {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .container form .input_checkbox .checkbox input {
   margin: 5px 0;
@@ -106,16 +107,23 @@ body {
   outline: none;
 }
 .container form .input_file input {
-  border: none;
-  overflow: hidden;
-  display: none;
+  color: transparent;
+  outline: none;
 }
-.container form .input_file span {
-  text-transform: uppercase;
+.container form .input_file input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.container form .input_file input::before {
+  content: "add file";
+  display: inline-block;
   color: #673ab7;
+  text-transform: uppercase;
+  outline: none;
+  white-space: nowrap;
+  user-select: none;
   cursor: pointer;
 }
-.container form .input_file span:hover {
+.container form .input_file input:hover:before {
   text-decoration: underline;
 }
 .container form .input_submit button {
