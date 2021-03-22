@@ -1,26 +1,12 @@
 function st3() {
-    function sum(i) {
-        var s1 = i;
-        var s = i - 2;
-        var s3 = s1 - 1;
-        var result = s3 + s;
-        return result;
-    }
-
-
-    let i;
-    i = prompt("Введите i")
-    if (!parseInt(i)) {
-        alert("Некорректный ввод");
+    let i = Number(prompt("Введите номер элемента числа Фибоначчи(целые числа от нуля)"));
+    if(Number.isNaN(i) || i < 0 || !Number.isInteger(i)) {
+        alert("Неверные входные данные!");
         fail;
     }
-    if (i < 1) {
-        alert("Некорректный ввод");
-        fail;
-    }
-
-    if (i == 1) alert("Результат: " + 0);
-    else {
-        alert(sum(i));
-    }
+    alert("под номером "+ i+" находится число "+Fib(i));
+}
+function Fib(i){
+    if (i == 0|| i == 1) {return 1}
+    return Fib(i-2) +Fib(i-1);
 }
