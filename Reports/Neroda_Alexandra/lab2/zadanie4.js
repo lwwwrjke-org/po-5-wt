@@ -1,17 +1,16 @@
 function zadanie4()
 {
-    let month = Number(prompt("Введите месяц."));
-    check(month, 1, 12);
+  let month = Number(prompt("Введите месяц."));
+  check(month, 1, 12);
 
-    let day = Number(prompt("Введите день."));
-    check(day, 1, 31);
+  let day = Number(prompt("Введите день."));
+  check(day, 1, 31);
 
-    let weekdays = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
-
-    let date = new Date(2016, month - 1, day);
-
-     switch (date.getDay())
-      {
+  let date = new Date(2016, month - 1, day);
+  if (date.getFullYear() == 2016 && date.getMonth() == (month - 1) && date.getDate() == day)
+  {
+    switch (date.getDay()) 
+    {
         case 0:
           alert('Воскресенье');
           break;
@@ -36,13 +35,20 @@ function zadanie4()
         default:
           alert('Неверная дата');
       }
+    }
+      else 
+    {
+        alert('Такого дня не существует');
+    }
 }
 
 function check(num, min, max){
-    if(Number.isNaN(num)){
-        alert("Введено не число!");
-    }
-    else if(num < min || num > max){
-        alert("Число не входит в диапазон!")
-    }
-}
+  if(Number.isNaN(num)){
+      alert("Введено не число!");
+      return;
+  }
+  else if(num < min || num > max){
+      alert("Число не входит в диапазон!");
+      return;
+  }
+} 
