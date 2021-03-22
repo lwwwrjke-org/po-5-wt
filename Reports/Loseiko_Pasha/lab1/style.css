@@ -1,90 +1,107 @@
-h1{
-font-weight:50;
-}
-h2 {
-font-size: 13px;
-font-weight: 10;
-} 
-h3{
-font-size: 16px;
-padding: 20px 0px 5px 0px;
-}
-h4{
-font-size: 14px;
-color: #00BFFF;
-}
-h5{
-	color: grey;
-font-size: 12px;
-}
-h6{
-	font-size: 20px;
-	font-family: 'Lucida console';
-	margin: 15px 0 50px 20px;
-}
-form{
-background:white; 
-padding:60px;
-width:550px;
-}
-body{
-font-family: 'Arial';
-background: linear-gradient(to bottom, BlueViolet 15%, #EDE7F6 0%); 
-}
-.fon{
-width: 40%;
-margin-left: 35%;
-margin-top: 150px;
-margin-bottom: 100px; 
-}
-.input{
-width: 50%;
-padding: 0 0 3px 0;
-border: none;
-border-bottom: 1px solid #e0e0e0;
-outline: none;
-}
-.add{
-color: blue;
-font-size: 13px;
-font-weight: 700;
-cursor: pointer;
-}
-.title{
-font-size: 30px;
-}
-.button{
-font-size: 13px;
-} 
-.submit {
-	background-color:#00BFFF;
-	border: none;
-	text-align: center;
-	padding: 10px 25px;
-	
-}
-.menu{
-border: none;
-outline: none;
-transition: 0.3s;
-background-color: transparent;
-color: grey;
-} 
-.text{
-color: grey;
-font-size: 12px;
-padding: 5px 0 0 0;
-}
-.text2 {
-margin: -65px 0 0 0px;
-display: flex;
-justify-content: center;
-color: gray;
-}
-.lasttext {
-color: #c2c2c2;
-display: flex;
-justify-content: center;
+﻿html
+{
+	width: 100%;
 }
 
+body
+{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
 
+.bgd
+{
+    width: 100%;
+    height: 100%;
+    background-color: #EDE7F6;
+}
+
+.head
+{
+    width: 100%;
+    height: 200px;
+    background-color: #673AB7;
+}
+
+.header .editor
+{
+    display: flex; 
+    justify-content: flex-end;
+    margin-right: 50px;
+    padding-top: 30px;
+}
+
+.layout
+{
+    margin-top: -64px;
+    display: flex;
+    justify-content: center;
+    font-family: Arial;
+}
+
+.layout .form 
+{
+    width: 600px;
+    background-color: white;
+    padding: 32px;
+    font-weight: lighter;
+    font-family: Arial;
+}
+
+a.btn_add_icon {
+    color: white;
+    font-weight: 400; 
+    padding: 13px;
+    border-radius: 3px;
+    text-decoration: none; 
+    background: rgb(36, 115, 241);
+    box-shadow: 0-3px rgb(3, 68, 121) inset;
+  } 
+  a.btn_add_icon:hover { 
+  background: rgb(16, 106, 209); 
+  } 
+  a.btn_add_icon:active {
+    background: rgb(33, 90, 144);
+    box-shadow: 0 3px rgb(11, 73, 131) inset;
+  }
+
+input {
+    border: 0;
+    border-bottom: 1px solid grey;
+}
+
+input:focus
+{
+	outline: none;
+}
+
+input[type="file"] {
+    position: absolute;
+    z-index: -1;
+}
+
+.submit
+{
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.footer
+{
+    width: 100%;
+    height: 130px;
+    background-color: #EDE7F6;
+    padding-top: 50px;
+}
+
+h3
+{ 
+    padding-top: 30px;
+}
+
+a.btn_info 
+{ 
+    text-decoration: none;
+    padding: 20px;
+} 
