@@ -163,3 +163,17 @@ margin: 10px
 .Checkbox{
 margin-top: 10px;
 }
+.feedback__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 132px;
+    height: 32px;
+    margin: 11px 0 0;
+    padding: 8px 20px 7px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+    color: rgb(0, 119, 255);
+    cursor: pointer;
+  }
