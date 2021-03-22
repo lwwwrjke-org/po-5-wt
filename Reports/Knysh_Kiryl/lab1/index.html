@@ -26,12 +26,12 @@
         <form action="">
             <div class="input_text input" >
                 <div class="label">Please fill your name</div>
-                <input type="text" class="text">
+                <input type="text" class="text" placeholder="Your answer" required>
             </div>
             <div class="input_radio input">
                 <div class="label">What color you like?</div>
                 <div class="radio">
-                    <input type="radio" class="radio" name="color">
+                    <input type="radio" class="radio" name="color" required>
                     <span>Red</span>
                 </div>
                 <div class="radio">
@@ -49,7 +49,7 @@
             </div>
             <div class="input_select input">
                 <div class="label">What town you like more?</div>
-                <select name="location">
+                <select name="location" required>
                       <option value="">Choose</option>
                       <option value="">One</option>
                       <option value="">Two</option>
@@ -58,14 +58,14 @@
                 </select>
             </div>
             <div class="input_text input">
-                <div class="label">Please describe yourself</div>
-                <input type="text" class="text" placeholder="Your answer..">
+                <div class="label">Please describe yourself (at least 50 symbols)</div>
+                <input type="text" class="text" placeholder="Your answer.." minlength="50" required>
             </div>
             
             <div class="input_checkbox input">
                 <div class="label">What years of education u realy like??</div>
                 <div class="checkbox">
-                    <input type="checkbox" name="years">
+                    <input type="checkbox" name="years" required>
                     <span>One</span>
                 </div>
                 <div class="checkbox">
@@ -83,16 +83,17 @@
             </div>
             <div class="input_date input">
                 <div class="label">Set last Monday Monday?</div>
-                <input type="date" name="time">
+                <input type="date" name="time" required>
             </div>
             <div class="input_file input">
                 <div class="label">Please send any image</div>
-                <input type="file">
+                <input type="file" required>
             </div>
-                <div class="input_submit input">
+            <div class="submit">
                 <button type="submit">Submit</button>
             </div>
         </form>
     </div>
+    <script src="./scripts.js"></script>
 </body>
 </html>
