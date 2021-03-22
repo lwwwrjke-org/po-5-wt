@@ -1,4 +1,12 @@
-function task_1() {
+function task_1 () {
+
+function valid(num){
+	if(Number.isNaN(num)||!Number.isInteger(num)) {
+		alert("Не верные входные данные!!!");
+		return false;
+	}
+	return true;
+}
     var first = Number(prompt("Введите начало массива"));
 	if (!valid(first)) return;
     var last = Number(prompt("Введите конец массива "));
@@ -18,12 +26,4 @@ function range (first, last, step) {
     if(step < 0) for(var i = first; i >= last; i = i + step)  mass.push(i);   
     else for(var i = first; i < last + 1; i = i + step) mass.push(i);   
     return mass;
-}
-
-function valid(num){
-	if(Number.isNaN(num)|| !Number.isInteger(num)) {
-		alert("Не верные входные данные!!!");
-		return false;
-	}
-	return true;
 }

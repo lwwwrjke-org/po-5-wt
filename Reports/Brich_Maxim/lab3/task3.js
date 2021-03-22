@@ -1,4 +1,11 @@
 function task_3() {
+	function valid(num){
+		if(Number.isNaN(num)|| !Number.isInteger(num)|| num <= 0) {
+			alert("Не верные входные данные!!!");
+			return false;
+		}
+		return true;
+	}
     var mass = [], mass2 = [], sum_mass = [];
     let row = Number(prompt("Введите число строк: "));
 	if (!valid(row)) return;
@@ -43,12 +50,4 @@ function show_matr(matr) {
         if(i != matr.length - 1) matrix_show += "\n";
     }
     return matrix_show;
-}
-
-function valid(num){
-	if(Number.isNaN(num)|| !Number.isInteger(num)|| num <= 0) {
-		alert("Не верные входные данные!!!");
-		return false;
-	}
-	return true;
 }
