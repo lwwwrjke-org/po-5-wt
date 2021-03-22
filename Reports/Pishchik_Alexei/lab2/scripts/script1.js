@@ -10,11 +10,9 @@ while(true) {
         alert("Первый ввод - не число");
         ExtensionScriptApis;
     }
-    num1 = Number.parseInt(num_1);
-    num2 = Number.parseInt(num_2);
-    if (num1 == num2){
+    if (num_1 == num_2){
         alert("Числа равны");
-    } else if (num1 > num2){
+    } else if (num_1 > num_2){
         alert("Второе число меньше");
     } else{
         alert("Первое число меньше");

@@ -14,12 +14,12 @@ function task_3 () {
     }
     else {
         i = Number.parseInt(i);
-        if(i < 1) {
+        if(i < 0) {
             alert("Неверное число");
             ExtensionScriptApis;
         }
     }
-    if(i === 1) alert("Результат: " + 0);
+    if(i == 1 || i == 0) alert("Результат: " + i);
     else {
         alert (sum(i));
     }
