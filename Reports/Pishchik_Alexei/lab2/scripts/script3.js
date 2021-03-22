@@ -1,9 +1,6 @@
 function sum (i) {
-    var s1 = i;
-    var s = i - 2;
-    var s3 = s1  - 1;
-    var result = s3 + s;
-    return  result;
+    if(i == 0 || i == 1) return i;
+    return  sum(i-2) + sum(i-1);
 }
 
 function task_3 () {
@@ -19,8 +16,5 @@ function task_3 () {
             ExtensionScriptApis;
         }
     }
-    if(i == 1 || i == 0) alert("Результат: " + i);
-    else {
-        alert (sum(i));
-    }
+    alert ("Результат: " + sum(i));
 }
