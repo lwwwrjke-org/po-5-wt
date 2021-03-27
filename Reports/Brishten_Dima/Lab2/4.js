@@ -1,3 +1,4 @@
+function four(){
 var num_month = prompt("Введите номер месяца");
 var digit = prompt("Введите число месяца " + num_month);
 var mas = [ "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье" ];
@@ -38,4 +39,5 @@ function Day(Sum)
             break;
         }
     }
+}
 }

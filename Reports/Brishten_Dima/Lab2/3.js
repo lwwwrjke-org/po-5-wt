@@ -1,3 +1,5 @@
+function three()
+{
 var num = prompt("Введите порядок числа Фибоначчи");
 
 function Fib(number)
@@ -10,3 +12,4 @@ function Fib(number)
 
 var number = Fib(num); 
 alert("Число Фибоначчи: " + number);
+}

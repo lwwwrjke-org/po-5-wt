@@ -1,3 +1,5 @@
+function two()
+{
 try 
 {
     var floor = prompt("Введите число этажей (1-25)");
@@ -14,4 +16,5 @@ try
 catch(e)
 {
     alert("Некорректный ввод данных");
+}
 }

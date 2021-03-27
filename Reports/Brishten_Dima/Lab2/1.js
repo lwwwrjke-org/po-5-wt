@@ -1,3 +1,4 @@
+function one(){
 while (true) 
 {
     var num1 = prompt("Введите первое число");
@@ -20,4 +21,5 @@ while (true)
         alert("Второе число меньше");
     else
         alert("Первое число меньше") 
+}
 }
