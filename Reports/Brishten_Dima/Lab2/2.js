@@ -6,12 +6,31 @@ try
     var number_of_entrances = prompt("Введите количество подъездов (1-10)");
     var number_of_flats = prompt("Введите количество квартир на лестничной площадке (1-20)");
     var number_flat = prompt("Введите номер квартиры"); 
-
-    if (isNaN(floor) || isNaN(number_of_flats) || isNaN(number_of_entrances) || isNaN(number_flat))
-        throw new SyntaxError("Данные некорректны");
-    
-    var entrance = number_flat /  (number_of_flats * floor - number_of_entrances);
-    alert("Ваш подъезд: " + Math.round(entrance))
+    if (parseInt(floor, 10) && parseInt(number_of_flats, 10) && parseInt(number_of_entrances, 10) && parseInt(number_flat, 10))
+    {
+    let flatInEntrance = floor * number_of_flats;
+    let flatInHouse = flatInEntrance * number_of_entrances;
+        if (number_flat < flatInHouse) 
+        {
+            for (let i = 1; i <= number_of_entrances;) 
+            {
+                if (number_flat > (i * flatInEntrance))
+                { 
+                    i++; 
+                }
+                else 
+                {
+                    alert("Номер подъезда: " + i);
+                    break;
+                }
+            }
+        }
+        else {
+            throw new SyntaxError('Нет такой квартиры!'); }
+    }
+    else {
+        throw new SyntaxError('Ошибка!');
+    }
 }
 catch(e)
 {

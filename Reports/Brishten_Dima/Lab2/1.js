@@ -3,7 +3,8 @@ while (true)
 {
     var num1 = prompt("Введите первое число");
     var num2 = prompt("Введите второе число");
-
+    num1 = Number(num1);
+    num2 = Number(num2);
     if (isNaN(num1))
     {
         alert("Первый ввод не число");
@@ -14,12 +15,14 @@ while (true)
         alert("Второй ввод не число");
         break;
     }
-
+    if (parseInt(num1, 10) && parseInt(num2, 10))
+    {
     if (num1 == num2)
         alert("Числа равны");
-    else if (num1 > num2)
+    if (num1 > num2)
         alert("Второе число меньше");
-    else
+    if (num2 > num1)
         alert("Первое число меньше") 
+    }
 }
 }

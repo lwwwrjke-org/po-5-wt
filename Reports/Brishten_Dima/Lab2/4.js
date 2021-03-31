@@ -2,7 +2,7 @@ function four(){
 var num_month = prompt("Введите номер месяца");
 var digit = prompt("Введите число месяца " + num_month);
 var mas = [ "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье" ];
-var num_day_of_months = [ 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+var num_day_of_months = [ 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 var sum = 0, s = 4;
 
 if (num_month == 1)
