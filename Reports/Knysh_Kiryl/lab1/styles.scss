@@ -1,0 +1,155 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(240, 235, 248);
+}
+.background {
+    height: 100vh;
+    background-color: #ede7f6;
+    &_top {
+        background-color: rgb(103, 58, 183);
+        height: 250px;
+    }
+}
+.required {
+    display: inline;
+    color: red;
+    margin-left: 5px;
+}
+.container {
+    padding: 48px 24px;
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    .top-line {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 8px;
+        width: 100%;
+        background-color: rgb(157, 117, 224);
+    }
+    .title span {
+        font-size: 32px;
+    }
+    .subtitle {
+        margin-top: 12px;
+        span {
+            font-size: 14px;
+        }
+    }
+    .warning {
+        margin-top: 12px;
+        span {
+            color: red;
+            font-size: 14px;
+        }
+    }
+    form {
+        .input {
+            margin-top: 45px;
+            .label {
+                font-size: 20px;
+                margin-bottom: 16px;
+            }
+            &_text input{
+                padding: 0 0 5px 0;
+                outline: none;
+                border: none;
+                border-bottom: 1px solid rgb(192, 192, 192);
+            }
+            &_radio {
+                display: flex;
+                flex-direction: column;
+                .radio {
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    input {
+                        margin: 5px 0;
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 10px;
+                        
+                    }
+                    input:hover {
+                        border: 10px solid rgb(157, 117, 224);
+                        border-radius: 50%;
+                    }
+                }
+                
+            }
+            &_select {
+                select {
+                    border: none;
+                }
+            }
+            &_checkbox {
+                display: flex;
+                flex-direction: column;
+                .checkbox {
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    input {
+                        margin: 5px 0;
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 10px;
+                    }
+                }
+                
+            }
+            &_date {
+                input {
+                    border: none;
+                    border-bottom: 1px solid rgb(192, 192, 192);
+                    outline: none;
+                }
+            }
+            &_file {
+                input {
+                    color: transparent;
+                    outline: none;
+                }
+                input::-webkit-file-upload-button {
+                    visibility: hidden;
+                }
+                input::before {
+                    content: 'add file';
+                    display: inline-block;
+                    color: rgb(103, 58, 183);
+                    text-transform: uppercase;
+                    outline: none;
+                    white-space: nowrap;
+                    user-select: none;
+                    cursor: pointer;
+                }
+                input:hover:before {
+                    text-decoration: underline;
+                }
+            }
+        }
+        .submit {
+            margin-top: 45px;
+            button {
+                outline: none;
+                padding: 10px 15px;
+                background-color: rgb(103, 58, 183);
+                color: #ffffff;
+                border: none;
+                border-radius: 3px;
+                cursor: pointer;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
