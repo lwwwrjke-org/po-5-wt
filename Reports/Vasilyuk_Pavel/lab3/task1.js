@@ -5,14 +5,16 @@ function mainRange() {
 
     let Step = Number(prompt("Введите шаг массива. (не обязательно)"));
 
-    if(Step !== ""){   
+    if(Step == null){   
         Range(Start, End, Step);
         return;
     }
+    else{
     Range(Start, End);
+    }
 }
 
-function Range(start, end, step = 1 ){
+function Range(start, end, step = 1){
     let arr = [];
     
     if (step < 0 && start < end){
