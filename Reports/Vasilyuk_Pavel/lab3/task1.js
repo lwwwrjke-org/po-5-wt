@@ -5,12 +5,12 @@ function mainRange() {
 
     let Step = Number(prompt("Введите шаг массива. (не обязательно)"));
 
-    if(Step == null){   
-        Range(Start, End, Step);
+    if(Step == ""){   
+        Range(Start, End);
         return;
     }
     else{
-    Range(Start, End);
+    Range(Start, End, Step);
     }
 }
 
