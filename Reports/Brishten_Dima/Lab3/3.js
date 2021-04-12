@@ -37,7 +37,7 @@ function three()
    input();
    var num3 = rows, num4 = cols;
    alert('Матрица(2)\n' + createMatrix(rows, cols));
-   if (num1 != num3 || num2 != num4)
+   if ((num1 != num3 || num2 != num4) || (num1 != num2 || num3 != num4))
    {
        alert("Матрицы с разной размерностью нельзя складывать");
        return;
