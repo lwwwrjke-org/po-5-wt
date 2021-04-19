@@ -17,7 +17,7 @@ getData = async (event) => {
                 console.log(userRepos)
 
                 dataContainer = document.querySelector('.data');
-                dataContainer.innerHTML = '<div>Username: ' + userData.login + '</div>' + '<div>Name: ' + userData.name + '</div>' + '<div>Followers: ' + userData.followers + '</div>'
+                dataContainer.innerHTML = '<div><img src="' + userData.avatar_url + '"/></div><div>Username: ' + userData.login + '</div>' + '<div>Name: ' + userData.name + '</div>' + '<div>Followers: ' + userData.followers + '</div>'
                 if (userRepos.length !== 0) {
                     dataContainer.innerHTML += '<ul></ul>'
                     userRepos.forEach(function(repo) {
