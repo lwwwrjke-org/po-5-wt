@@ -20,6 +20,24 @@ function three()
         }
         return str;
     }
+    function sum(rows, cols)
+    {
+        var str = '';
+        var num; 
+        var start = rows*cols;
+        for (let i = 0, j = start, n = 1; i < start, j < start*2; i++, j++, n++)
+        {
+            num = mas[i] + mas[j];
+            str += num;
+            str += ' ';
+            if (n == cols)
+            {
+                str += '\n';
+                n = 0;
+            }
+        }  
+        alert("Матрица суммы матриц \n" + str);
+    }
     var rows, cols;
     function input()
     {
@@ -27,37 +45,24 @@ function three()
         cols = prompt("Введите количество столбцов в матрице");
         if (isNaN(rows) || isNaN(cols)) 
         {
-            alert("Ошибка");
-            return;
+            alert("Не число");
+            return false;
         }
-    }
-   input();
-   var num1 = rows, num2 = cols;
-   alert('Матрица(1)\n' + createMatrix(rows, cols));
-   input();
-   var num3 = rows, num4 = cols;
-   alert('Матрица(2)\n' + createMatrix(rows, cols));
-   if ((num1 != num3 || num2 != num4) || (num1 != num2 || num3 != num4))
-   {
-       alert("Матрицы с разной размерностью нельзя складывать");
-       return;
-   }
-   else 
-   {
-        var str = '';
-        var num; 
-        var start = num1*num2;
-        for (let i = 0, j = start, n = 1; i < start, j < start*2; i++, j++, n++)
+        rows = parseInt(rows, 10);
+        cols = parseInt(cols, 10);
+        if (rows < 1 || cols < 1)
         {
-            num = mas[i] + mas[j];
-            str += num;
-            str += ' ';
-            if (n == num1)
-            {
-                str += '\n';
-                n = 0;
-            }
-        }  
-        alert("Матрица суммы матриц \n" + str);
-   }
+            alert("Неверный диапазон");
+            return false;
+        }
+        return true;
+    }
+    if (input())
+    { 
+        alert('Матрица(1)\n' + createMatrix(rows, cols));
+        alert('Матрица(2)\n' + createMatrix(rows, cols));
+        sum(rows, cols);
+    }
+    else
+        return 0;
 }
