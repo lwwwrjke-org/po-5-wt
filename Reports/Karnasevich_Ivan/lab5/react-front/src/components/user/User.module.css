@@ -1,0 +1,14 @@
+.gridContainer{
+    display: grid;
+    grid-template-columns: min-content auto;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+button {
+    margin: 2px;
+}
