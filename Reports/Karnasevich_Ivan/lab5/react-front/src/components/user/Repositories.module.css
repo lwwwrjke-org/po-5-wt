@@ -1,0 +1,22 @@
+.repositoriesContainerTiled {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.repositoriesContainer {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.repositoryItem{
+    margin: 2px;
+    background-color: indianred;
+}
+
+.repositoryItem > * {
+    margin: 10px;
+}
+
+a {
+    display: block;
+}
