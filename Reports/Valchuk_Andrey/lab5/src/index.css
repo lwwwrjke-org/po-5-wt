@@ -1,0 +1,21 @@
+.grid {
+  display: grid;
+  row-gap: 10px;
+  column-gap: 20px;
+}
+
+.repo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #e3f0ff;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #5483b9;
+  cursor: pointer;
+}
+
+.repo p {
+  margin: 0 0 0 5px;
+}
