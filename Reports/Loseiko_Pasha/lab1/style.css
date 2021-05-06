@@ -1,0 +1,107 @@
+﻿html
+{
+	width: 100%;
+}
+
+body
+{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bgd
+{
+    width: 100%;
+    height: 100%;
+    background-color: #EDE7F6;
+}
+
+.head
+{
+    width: 100%;
+    height: 200px;
+    background-color: #673AB7;
+}
+
+.header .editor
+{
+    display: flex; 
+    justify-content: flex-end;
+    margin-right: 50px;
+    padding-top: 30px;
+}
+
+.layout
+{
+    margin-top: -64px;
+    display: flex;
+    justify-content: center;
+    font-family: Arial;
+}
+
+.layout .form 
+{
+    width: 600px;
+    background-color: white;
+    padding: 32px;
+    font-weight: lighter;
+    font-family: Arial;
+}
+
+a.btn_add_icon {
+    color: white;
+    font-weight: 400; 
+    padding: 13px;
+    border-radius: 3px;
+    text-decoration: none; 
+    background: rgb(36, 115, 241);
+    box-shadow: 0-3px rgb(3, 68, 121) inset;
+  } 
+  a.btn_add_icon:hover { 
+  background: rgb(16, 106, 209); 
+  } 
+  a.btn_add_icon:active {
+    background: rgb(33, 90, 144);
+    box-shadow: 0 3px rgb(11, 73, 131) inset;
+  }
+
+input {
+    border: 0;
+    border-bottom: 1px solid grey;
+}
+
+input:focus
+{
+	outline: none;
+}
+
+input[type="file"] {
+    position: absolute;
+    z-index: -1;
+}
+
+.submit
+{
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.footer
+{
+    width: 100%;
+    height: 130px;
+    background-color: #EDE7F6;
+    padding-top: 50px;
+}
+
+h3
+{ 
+    padding-top: 30px;
+}
+
+a.btn_info 
+{ 
+    text-decoration: none;
+    padding: 20px;
+} 
