@@ -1,0 +1,89 @@
+.title {
+    margin-left: 400px;
+    padding-top:30px;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    color: rgb(50, 50, 50);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    border-radius: 15px;
+    border: 1px solid lightgray;
+    background-color: white;
+  }
+
+
+
+.Img { 
+    width: 400px; 
+    height: 400px;
+    border-radius: 100%; 
+}
+
+.repos {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 20px;
+    width: 350px;
+    font-size: 100%;
+    font-family: Arial;
+    color: #2a0f4e;
+    border-spacing: 18px 15px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.lang {
+    font-size: 15px;
+    color: black;
+    font-weight: lighter;
+    padding-left: 7px;
+}
+
+.repoNames {
+    padding-top: 15px;
+    padding-left: 7px;
+}
+
+.follow {
+    font-family: Arial;
+}
+
+.location, .name {
+    font-size: 28px;
+    color: #444;
+    font-weight: bold;
+}
+
+.login {
+    font-size: 22px; 
+    line-height: 1.25; 
+    color: grey;
+}
+
+.language {
+    font-size: 25px;
+    color: black;
+    font-weight: lighter;
+}
+
+.lay {
+   padding-top: 20px;
+   padding-left: 50px;
+}
+
+.mainTable td {
+    border-width: 0px;
+    width: 500px;
+    font-size: 18px;
+}
+
+.description {
+    font-size: 10px;
+} 
+
+.rep {
+    margin-left: 50px;
+}
