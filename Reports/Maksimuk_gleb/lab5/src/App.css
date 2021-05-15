@@ -1,0 +1,53 @@
+.search {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.mainWindow {
+  height: 100%;
+  width: 90%;
+  margin-left: 5%;
+  position: relative;
+ 
+}
+
+.mainWindowPosition {
+  display: inline-block;
+}
+
+.cardRepoData {
+  padding-top: 10px;
+  width: 100%;
+  position: absolute;
+}
+
+.changeView {
+  
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 80%;
+}
+
+.dataRepo {
+  width: 60%;
+  position: absolute;
+  margin: -280px 0;
+ 
+}
+
+.bar {
+  column-count: 2;
+  column-gap: 15px;
+  
+  .repo {
+    break-inside: avoid;
+    padding: 10px;
+    border-radius: 10px;
+  }
+}
+
+.row {
+  column-count: 1;
+}
