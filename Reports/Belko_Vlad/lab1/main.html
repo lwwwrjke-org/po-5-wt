@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="utf-8"/> 
+	<title>Google Form</title>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+	<div class="header">
+		<div class="edit"><img src="edit.png"></div>
+		<div class="mid">
+		<div class="upper"> </div>
+		<div class="main">
+		<form>
+			<h1>Password request form</h1>
+			<p>The name and photo assosiated with your Google account will be recorded when you upload files and submiit this form. Not <strong>spas.work@gmail.com?</strong><a href="#" style="text-decoration: underline;"> Switch account</a></p><br><br>
+			<p style="color: red;">*Required</p><br><br>
+			<h2>Please fill your name<span style="color: red;">*</span></h2>
+			<input type= "text" name = "Name" placeholder = "Your answer" required class="Input"><br><br>
+			<h2>What color you like<span style="color: red;">*</span></h2>
+				<label for = "Red"><input type="radio" name="Color" class="button" value="1">Red<br></label>
+				<label for = "Green"><input type="radio" name="Color" class="button" value="2">Green<br></label>
+				<label for = "Blue"><input type="radio" name="Color" class="button" value="3">Blue<br></label>
+				<label for = "Black"><input type="radio" name="Color" class="button" value="4">Black<br></label>
+				<label for = "White"><input type="radio" name="Color" class="button" value="5">White<br></label>
+				<label for = "Other"><input type="radio" name="Color" class="button" value="6">Other:<input type="text" name="input" class="input"></label>
+			<h2>What town you like more?<span style="color: red;">*</span></h2>
+				<label for="City">
+						<select class = "City" required>
+							<option value="Choose" >Choose</option>
+							<option value="Brest" >Brest</option>
+							<option value="Paris" >Paris</option>
+							<option value="Tokyo" >Tokyo</option>
+							<option value="Karaganda" >Karaganda</option>
+						</select>
+				</label>
+			<br><br><br><h2>Please describe (at least 50 symbols on symbols) your favorite programming language <span style="color: red;">*</span></h2>
+				<input type= "text" name = "Language" placeholder = "Your answer" minlength="50" required><br><br>
+			<h2>What years of education did you really like? <span style="color: red;">*</span></h2>
+					<div class = "Checkbox">
+						<p><input type="checkbox" name="First"/> First</p><br>
+						<p><input type="checkbox" name="Second"/> Second</p><br>
+						<p><input type="checkbox" name="Third"/> Third</p><br>
+						<p><input type="checkbox" name="Fourth"/> Fourth</p><br>
+					</div>
+		  <h2>Please send any image <span style="color: red;">*</span></h2>
+		  <label for="image" style="color: blue; cursor: pointer; font-size: 20px;"  >ADD FILE</label>
+		  <input type="file" id="image" name="photo" multiple accept="image/*" required></p>
+
+			<h2>Set last Monday Monday<span style="color: red;">*</span></h2>
+				<p class="down">Date</p><br>
+				<input class="input" type="Date" name=""><br> 
+			<p><input class="button" type="button" value="SUBMIT" name="Submit" ></p>
+			<p class="down">Never submit passwords through Google Forms</p> 
+		</form></div></div>
+	
+	</div>
+ 	<div class="down_page">
+			<h5>The content is neither created not endrorsed by Google. Report Abuse - Teams of Servise - Additional Terms</h5>
+		</div>
+		<br><div class="maxdown">
+			<h2>Google Forms</h2>
+			<div class="info"><img src="info.png"></div>
+		</div> <br>
+</body>
+</html> 
+
+
