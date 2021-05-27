@@ -1,37 +1,58 @@
 function one(){
-function range(begin, end)
-{
-    if (isNaN(begin) || isNaN(end))
+    let firstNum = Number(prompt("Введите первое число диапазона"));
+    if (Number.isNaN(firstNum)) 
     {
-        return alert("Нечисловое значение");
+        alert("Не число!");
+        return;
     }
-    begin = parseInt(begin, 10);
-    end = parseInt(end, 10);
-    var mas = []; 
-    var shag = prompt("Введите шаг");
-    shag = parseInt(shag, 10);
 
-    if (begin <= end)
+    let lastNum = Number(prompt("Введите последнее число из диапазона"));
+    if (Number.isNaN(lastNum)) 
     {
-        while (begin <= end)
+        alert("Не число!");
+        return;
+    }
+
+    let step = Number(prompt("Введите шаг"));
+    if (Number.isNaN(step)) 
+    {
+        alert("Не число!");
+        return;
+    }
+
+    try 
+    {
+        alert(range(firstNum, lastNum, step));
+    }
+    catch (ex) 
+    {
+        alert(ex);
+    }
+}
+
+function range(firstNum, lastNum, step = 1)
+{
+    if ((firstNum < lastNum && step <= 0) || (firstNum > lastNum && step >= 0)) 
+    {
+        throw "Invalid boundaries or step";
+    }
+
+    let arrRange = [];
+
+    if (step > 0)
+    {
+        for (let i = firstNum; i <= lastNum; i += step) 
         {
-            mas.push(begin);
-            begin = begin + shag;
+            arrRange.push(i);
         }
     }
-   
     else
     {
-        while(begin >= end)
+        for (let i = firstNum; i >= lastNum; i += step) 
         {
-            mas.push(begin);
-            begin = begin - shag;
+            arrRange.push(i);
         }
     }
-    return mas;
-}
-alert("Сейчас Вы введёте диапазон чисел, если первое число меньше второго, то шаг будет положителен, иначе - отрицателен");
-var beg = prompt("Введите начальное число");
-var en = prompt("Введите конечное число");
-alert(range(beg,en));
+
+    return arrRange;
 }
